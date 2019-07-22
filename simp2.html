@@ -1,0 +1,241 @@
+<html>
+  <head>
+    <title>asdasdasd</title>
+    <meta charset="utf-8">
+    <style>
+      .top{
+        border: 0px solid;
+        font-size: 20px;
+        text-align: right;
+        margin: 0px;
+        padding: 20px;
+      }
+
+      body{
+        margin: 20px;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 163px 1332px;
+        background-color: #819FF7;
+
+      }
+
+      .q1{
+        border: 0px solid;
+        margin: 0px;
+        width: 100px;
+        padding: 30px;
+        font-size : 50px;
+        content-background-color: #A9D0F5;
+        text-align: center;
+      }
+
+      .q2{
+        border: 0px solid;
+        margin: blue 0px;
+        padding: 30px;
+        font-size : 20px;
+        text-align: right;
+      }
+
+
+      .check{
+        border-bottom: 1px black solid;
+        border-top: 1px black solid;
+        display: grid;
+        grid-template-columns: 500px 500px;
+        height: 500px;
+        justify-content: center;
+        align-content: center;
+      }
+
+
+      .c1{
+      }
+
+      input.c11{
+        border: none;
+        width: 70px;
+        padding: 200px;
+        margin: 0px;
+        background-repeat:no-repeat;
+        background:url("oxo.png");
+        height: 100;
+        background-size: contain;
+        background-color: #BDBDBD;
+        cursor: pointer;
+    }
+
+
+
+
+      .c2{
+
+      }
+      input.c22{
+        border: none;
+        width: 10px;
+        padding: 200px;
+        margin: 0px;
+        background-repeat:no-repeat;
+        background-image:url("xox.png");
+        height: 100;
+        background-size: contain;
+        background-color: #BDBDBD;
+        cursor: pointer;
+
+
+      }
+
+
+      .bot{
+        display: grid;
+        grid-template-columns: 700px 700px;
+      }
+
+      .lbot{
+
+
+
+
+      }
+
+
+      .lbot1{
+
+      }
+      .lbot2{
+
+      }
+
+
+
+      input.rbot{
+        background: url( "book.png" ) no-repeat;
+        border: none;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        background-size: contain;
+      }
+      .rbot2{
+        text-align: right;
+      }
+
+
+
+
+
+
+
+      }
+
+      .event{
+
+      }
+
+
+
+      .jill{
+
+
+      }
+    </style>
+
+
+    <script>
+      function myFunction() {
+          document.getElementById("lbot1").innerHTML = "정답 : X";
+          document.getElementById("lbot2").innerHTML = "해설 : 스텐트 뿐만 아니 전달시스템에 대해서도 생물학적 안전에 대한 평가가 필요하다.";
+        }
+    </script>
+
+  </head>
+
+
+
+
+
+
+
+
+
+
+
+  <body style = "background: #BDBDBD">
+    <h1 class="top">다음에 제시된 문장이 옳으면 O,틀리면 X를 선택하시오.</h1><br>
+
+    <div id ="grid">
+      <div class = "q1" style = "background: #A9D0F5">
+        Q3
+      </div>
+      <div class = "q2">
+          <p>관상동맥용 스텐트 허가시, 인체에 삽입되는 스텐트에 대해서만 생물학적 안전에 관한 평가가 필요하다</p>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+    <div class = check>
+
+      <div class = c1>
+        <input type="button" class ="c11" onclick= "myFunction(); alert('오답이다.')">
+      </div>
+      <div class = c2>
+        <input type="button" class ="c22" onclick= "myFunction(); alert('정답이다.')">
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class = bot>
+      <div class = lbot>
+
+        <h2 id = 'lbot1'>_</h2>
+        <h2 id = 'lbot2'>_</h2>
+
+      </div>
+
+
+      <div class = rbot2>
+        <input type="button" value="정답 확인" class="rbot" onclick="alert('준비중')">
+
+      </div>
+    </div>
+
+
+
+
+
+  </body>
+</html>
